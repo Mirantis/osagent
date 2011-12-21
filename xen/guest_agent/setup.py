@@ -2,8 +2,7 @@
 import os.path
 
 from distutils.core import setup
-from py2exe2msi import py2exe2msi, Service
-
+from py2exe2msi.command import Service
 
 PACKAGE_NAME = 'OpenStackAgent'
 VERSION = '0.0.4'
@@ -21,9 +20,10 @@ package_metadata = dict(
 		'Programming Language :: Python',
 		'Development Status :: 3 - Alpha',
 		'Intended Audience :: Developers',
+		'Operating System :: Microsoft',
 		'Operating System :: Microsoft :: Windows',
 	],
-	license = 'Proprietary License'
+	requires = ['py2exe2msi'],
 )
 
 NtService = Service(
