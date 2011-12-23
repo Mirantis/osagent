@@ -16,7 +16,8 @@ package_metadata = dict(
 	author_email = 'abyss@mirantis.com',
 	long_description = '''<long-description>''',
 	classifiers = [
-		'License :: Other/Proprietary License',
+		'License :: OSI Approved',
+		'License :: OSI Approved :: Apache Software License',
 		'Programming Language :: Python',
 		'Development Status :: 3 - Alpha',
 		'Intended Audience :: Developers',
